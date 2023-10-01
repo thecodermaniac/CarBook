@@ -2,7 +2,7 @@ import React from 'react'
 import HeroImg from '../assets/hero.png'
 const Hero = () => {
     return (
-        <div className='flex md:flex-row flex-col gap-5 relative  max-w-[1440px] h-screen'>
+        <div className='flex md:flex-row flex-col gap-5 relative h-screen'>
             <div className="flex flex-col flex-1 justify-center items-start">
                 <h1 className="2xl:text-[64px] sm:text-[40px] text-[40px] font-extrabold;">
                     Find, book, rent a car—quick and super easy!

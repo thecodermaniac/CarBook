@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    link: '/',
+    link: '/explore-car',
     title: 'Explore Cars',
     isOtherSite: false
   },

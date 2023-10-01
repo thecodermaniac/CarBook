@@ -1,6 +1,8 @@
 import Layouts from "./components/Layouts"
 import PrivateRoute from "./components/PrivateRoute";
+import SingleCar from "./components/SingleCar";
 import About from "./pages/About";
+import ExploreCar from "./pages/ExploreCar";
 import Home from "./pages/Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Layouts>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/explore-car" element={<ExploreCar />} />
+          <Route path="/explore-car/:carId" element={<SingleCar />} />
           <Route path="/aboutus" element={<PrivateRoute><About /></PrivateRoute>} />
         </Routes>
       </Layouts>

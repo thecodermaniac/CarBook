@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.svg";
 import Menu from "../../assets/menu.png";
+import { Link } from "react-router-dom";
 
 import { navLinks } from "./NavLinks";
 
@@ -14,9 +15,9 @@ function Navbar() {
         >
 
             <div className="w-full md:w-max p-2 md:p-0 flex items-center justify-between">
-                <span >
+                <Link to={'/'}>
                     <img src={Logo} alt="Matricula" className="w-36" />
-                </span>
+                </Link>
                 <button onClick={() => setShowMenu(!showMenu)} className="md:hidden">
                     <img src={Menu} alt="Menu" className="w-6" />
                 </button>
@@ -27,13 +28,13 @@ function Navbar() {
             >
                 <div className=" flex flex-col md:flex-row gap-6 w-full sm:justify-around items-center">
                     {navLinks.map((item, idx) => (
-                        <span
+                        <Link to={item.link}
                             key={idx}
-                            className={`${"group text-black font-medium text-lg hover:text-mainColor hover:underline underline-offset-[1rem]"}`}
+                            className={`${"group text-black font-medium text-lg hover:text-mainColor hover:underline underline-offset-[1rem]"} cursor-pointer`}
                         >
                             {item.title}
                             {/* <span className="hidden group-hover:block">hghg</span> */}
-                        </span>
+                        </Link>
                     ))}
                     <div className="md:hidden flex-row md:w-[40%] w-full justify-around bg-white flex">
                         <button className="border-mainColor border-2 px-5 py-4 text-mainColor font-medium hover:text-white hover:bg-mainColor">Login</button>

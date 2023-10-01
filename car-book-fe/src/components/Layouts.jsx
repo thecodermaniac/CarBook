@@ -7,7 +7,7 @@ const Layouts = ({ children, bgColor }) => {
         <>
             <Navbar />
             <div className='flex flex-col h-[100%] min-h-screen overflow-hidden'>
-                <main className={`${bgColor ? bgColor : 'white'} md:mx-12 mx-6 mb-auto`}>{children}</main>
+                <main className={`${bgColor ? bgColor : 'white'} md:mx-12 mx-6 mb-auto max-w-[1440px] lg:mx-auto`}>{children}</main>
             </div>
             <Footer />
         </>

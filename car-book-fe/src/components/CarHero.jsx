@@ -27,7 +27,7 @@ const client = [
 
 const CarHero = () => {
     return (
-        <div className='flex md:flex-row flex-col-reverse gap-5 relative  max-w-[1440px] h-screen'>
+        <div className='flex md:flex-row flex-col-reverse gap-5 relative h-screen'>
             <div className='md:flex-[1.5] flex justify-end items-center w-full h-full'>
                 <div className='md:w-[90%] h-[60%] w-full'>
                     <Swiper
