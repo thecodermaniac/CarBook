@@ -3,6 +3,8 @@ import env from "dotenv";
 
 // IMPORT DB CONNECTION
 import dbConnection from "./config/connection.js";
+import carRoutes from './routes/carRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 import cors from "cors";
 
@@ -24,6 +26,8 @@ dbConnection();
 
 //Routes Connection
 // app.use('/',"Hi its worki")
+app.use('/car', carRoutes)
+app.use('/user', userRoutes)
 
 // Server Listen
 const PORT = process.env.PORT || 5000;
