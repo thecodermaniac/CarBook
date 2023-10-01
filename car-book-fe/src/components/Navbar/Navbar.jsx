@@ -29,21 +29,21 @@ function Navbar() {
                     {navLinks.map((item, idx) => (
                         <span
                             key={idx}
-                            className={`${"group text-black font-medium text-lg hover:text-[#0033FF] hover:underline underline-offset-[1rem]"}`}
+                            className={`${"group text-black font-medium text-lg hover:text-mainColor hover:underline underline-offset-[1rem]"}`}
                         >
                             {item.title}
                             {/* <span className="hidden group-hover:block">hghg</span> */}
                         </span>
                     ))}
                     <div className="md:hidden flex-row md:w-[40%] w-full justify-around bg-white flex">
-                        <button className="border-[#0033FF] border-2 px-5 py-4 text-[#0033FF] font-medium hover:text-white hover:bg-[#0033FF]">Login</button>
-                        <button className="bg-[#0033FF] border-[#0033FF] border-2 text-white px-5 py-4  hover:text-[#0033FF] hover:bg-white">Sign Up</button>
+                        <button className="border-mainColor border-2 px-5 py-4 text-mainColor font-medium hover:text-white hover:bg-mainColor">Login</button>
+                        <button className="bg-mainColor border-mainColor border-2 text-white px-5 py-4  hover:text-mainColor hover:bg-white">Sign Up</button>
                     </div>
                 </div>
 
                 <div className="md:flex flex-row md:w-[40%] w-full justify-end gap-4 bg-white hidden">
-                    <button className="border-[#0033FF] border-2 px-5 py-4 text-[#0033FF] font-medium hover:text-white hover:bg-[#0033FF]">Login</button>
-                    <button className="bg-[#0033FF] border-[#0033FF] border-2 text-white px-5 py-4  hover:text-[#0033FF] hover:bg-white">Sign Up</button>
+                    <button className="border-mainColor border-2 px-5 py-4 text-mainColor font-medium hover:text-white hover:bg-mainColor">Login</button>
+                    <button className="bg-mainColor border-mainColor border-2 text-white px-5 py-4  hover:text-mainColor hover:bg-white">Sign Up</button>
                 </div>
             </div>
 

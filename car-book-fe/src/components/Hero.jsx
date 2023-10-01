@@ -15,9 +15,8 @@ const Hero = () => {
                 <button className='py-3 '>Explore Cars</button>
             </div>
             <div className='md:flex-[1.5] flex justify-end items-center w-full '>
-                <div className='relative xl:w-full w-[90%]  z-0;'>
-                    <img src={HeroImg} alt='car image'/>
-                    <div className='absolute xl:-top-24 -top-10 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden' />
+                <div className=' xl:w-full w-[90%]'>
+                    <img src={HeroImg} alt='car image' />
                 </div>
             </div>
         </div>
