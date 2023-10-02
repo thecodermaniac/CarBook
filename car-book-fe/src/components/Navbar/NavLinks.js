@@ -5,7 +5,7 @@ const navLinks = [
     isOtherSite: false
   },
   {
-    link: '#',
+    link: '/user-booking',
     title: 'My Rides',
     isOtherSite: true
   },

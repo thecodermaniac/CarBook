@@ -3,9 +3,11 @@ import { useParams } from 'react-router-dom'
 import axiosInstance from '../axiosServer'
 import { toast } from 'react-toastify';
 import Datepicker from 'react-tailwindcss-datepicker'
+import { useUser } from '../contex/UserContext';
 
 
 const SingleCar = () => {
+    const { user } = useUser();
     const [carInfo, setCarInfo] = useState(null)
     const { carId } = useParams('carId')
     function pad2digits(num) {
@@ -25,7 +27,7 @@ const SingleCar = () => {
         endDate: getOnlyDate(1),
         singleDate: getOnlyDate(0),
         carId: carId,
-        userId: null
+        userId: user?._id
     })
     async function fetchData() {
         const { data } = await (await axiosInstance.get(`/car/singleCar/${carId}`)).data
@@ -50,7 +52,19 @@ const SingleCar = () => {
     async function submitBook() {
         if (bookInfo.userId === null) {
             toast.error('Please Login or Sign Up')
+            return
         }
+        axiosInstance.post('/car/book-car', {
+            userId: user?._id,
+            carId: bookInfo.carId,
+            singleDate: bookInfo.isOneDay ? bookInfo.singleDate : null,
+            startDate: bookInfo.isOneDay ? null : bookInfo.startDate,
+            endDate: bookInfo.isOneDay ? null : bookInfo.endDate
+        }).then((response) => {
+            toast.success(response.data.message)
+        }).catch((error) => {
+            toast.error(error.response.data.message)
+        })
     }
     useEffect(() => {
         fetchData()

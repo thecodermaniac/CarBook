@@ -1,7 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import moment from "moment";
 
-const CarCards = ({ singleCar }) => {
+const CarCards = ({ singleCar, userId, singleDate, startDate, endDate }) => {
+    console.log(moment(singleDate).utc().format('YYYY-MM-DD'));
     const navigate = useNavigate();
     return (
         <div
@@ -21,7 +23,12 @@ const CarCards = ({ singleCar }) => {
                         {singleCar?.carName}
                     </p>
                     <button className='border-mainColor border-2 px-2 rounded-xl text-mainColor text-sm'>{singleCar.carType}</button>
+
                 </div>
+                {userId && <div className='flex justify-between mt-3'>
+                    <p className='text-sm text-grayText font-medium'>Booked On</p>
+                    <p className='text-sm text-grayText font-medium'>{singleDate !== null ? moment(singleDate).utc().format('DD-MM-YYYY') : `${moment(startDate).utc().format('DD-MM-YYYY')} to ${moment(endDate).utc().format('DD-MM-YYYY') }`}</p>
+                </div>}
                 <div className="flex justify-center mt-3">
                     <p className="text-grayText text-sm tracking-[-0.5%] max-w-[18rem]">
                         {singleCar?.description}

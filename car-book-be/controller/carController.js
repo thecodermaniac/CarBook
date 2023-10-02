@@ -67,7 +67,7 @@ export const bookCar = async (req, res) => {
 export const getBookedCar = async (req, res) => {
     try {
         const { page, limit, userId } = req.query;
-        const bookList = await Booking.find({ customer: userId }).limit(Number(limit)).skip(Number(limit) * Number(page)).populate('Car')
+        const bookList = await Booking.find({ customer: userId }).limit(Number(limit)).skip(Number(limit) * Number(page)).populate('car')
         res.status(200).json({
             success: true,
             data: bookList
