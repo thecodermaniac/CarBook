@@ -50,7 +50,8 @@ const SingleCar = () => {
     }
 
     async function submitBook() {
-        if (bookInfo.userId === null) {
+        console.log(user?._id);
+        if (bookInfo.userId === undefined) {
             toast.error('Please Login or Sign Up')
             return
         }
