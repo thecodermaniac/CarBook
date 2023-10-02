@@ -4,21 +4,29 @@ This is <b>Full-stack</b> Web App for Car Booking
 
 ## Screenshot of the app
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/6f5c7bda-ed24-4070-918f-79b2bff3fafa)
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/88bbd6bd-d51a-464a-b1f5-b20506dacc25)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/da333e46-8a18-413e-8a26-d9db25cb33e6)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/b3761d2d-15a8-45fe-b159-0ced2d990325)
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/253cfa1d-ee51-4e3e-97a9-e141a6820d19)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/4efb7852-f2e4-4c2f-803b-9847ef3ffa72)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/045d054a-b6b5-4a2b-b482-f363feaee397)
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/3f317e30-96a2-4fa4-b2cf-f3e1401073ee)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/41fd296c-1544-49da-b9a6-54b4f7e7e9a1)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/56b3cedd-051c-4d49-94ae-cad103c59eb9)
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/a65f97af-fefb-4dd5-8bb0-ebe15cb92420)
 
-![image](https://github.com/thecodermaniac/CarBook/assets/79108244/2e2a480a-5c88-42a1-ba58-4a1ccb897607)
+
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/d8ac795f-5b32-42b4-afb2-400f0277fb8f)
+
+
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/4afd8d95-4de1-488a-9bda-08ecf2c130d5)
+
+
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/3a76852a-7334-4770-91df-01036253edc7)
+
+
+![image](https://github.com/thecodermaniac/CarBook/assets/79108244/7db722fb-1928-45b6-91f7-277e6805cad1)
+
 
 ## Video work-through of the app
 
