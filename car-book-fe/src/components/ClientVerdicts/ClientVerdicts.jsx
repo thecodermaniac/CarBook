@@ -23,7 +23,7 @@ export default function ClientVerdicts() {
                     {client.map((value) => {
                         return (
                             <SwiperSlide>
-                                <div className="bg-[#F9FAFB] flex flex-col sm:flex-row p-6 px-12 rounded-xl border-1  justify-between items-center">
+                                <div className="bg-[#edeff1] flex flex-col sm:flex-row p-6 px-12 rounded-xl border-1  justify-between items-center">
                                     <img src={value.picImage} alt="" className="w-[15%] aspect-square object-cover rounded-full mx-auto" />
                                     <div className="flex flex-col items-start gap-2 sm:w-1/2 w-full">
                                         <p className="pt-4">{value.verdict}</p>

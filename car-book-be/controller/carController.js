@@ -83,7 +83,7 @@ export const getBookedCar = async (req, res) => {
 export const getSingleCar = async (req, res) => {
     try {
         const { carId } = req.params;
-        const singleCar = await CarModel.findById(carId).populate('Car')
+        const singleCar = await CarModel.findById(carId)
         res.status(200).json({
             success: true,
             data: singleCar
