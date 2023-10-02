@@ -6,49 +6,49 @@ import YouTube from '../../assets/Group 265.svg';
 export const socials = [
     {
         name: 'Facebook',
-        link: 'https://www.facebook.com/matricula.edu/',
+        link: '#',
         icon: Facebook
     },
     {
         name: 'Instagram',
-        link: 'https://www.instagram.com/matricula_edu/',
+        link: '#',
         icon: Instagram
     },
     {
         name: 'Twitter',
-        link: 'https://twitter.com/Matricula_edu',
+        link: '#',
         icon: Twitter
     },
     {
         name: 'YouTube',
-        link: 'https://www.youtube.com/channel/UCcFrPZj7FXWIlWb7ZCLao2Q',
+        link: '#',
         icon: YouTube
     }
 ];
 
 export const footerLinks = [
     {
-        link: '/',
+        link: '/explore-car',
         title: 'Explore Cars',
         isOtherSite: false
       },
       {
-        link: '#',
+        link: '/user-booking',
         title: 'My Rides',
         isOtherSite: true
       },
       {
-        link: '/matricula-classes',
+        link: '#',
         title: 'Client Verdicts',
         isOtherSite: false
       },
       {
-        link: '/community',
-        title: 'Community',
+        link: '/',
+        title: 'Home',
         isOtherSite: false
       },
       {
-        link: 'https://test.matricula.co.in',
+        link: 'https://aritra-mondal.netlify.app/',
         title: 'About Us',
         isOtherSite: true
       }

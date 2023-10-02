@@ -1,5 +1,6 @@
 import React from 'react'
 import { footerLinks, socials } from "./FooterLinks";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
         <div className="h-full w-full flex flex-col md:flex-row items-start ">
           <div className="flex flex-col gap-4 items-start justify-between w-full flex-wrap flex-grow-1 basis-[70%] p-8 px-0 md:px-8 md:max-h-[12rem] overflow-hidden">
             {footerLinks.map((link, idx) => (
-              <span>
+              <Link to={link.link} key={idx}>
                 {link.title}
-              </span>
+              </Link>
             ))}
           </div>
           <div className="pt-8 pl-0 md:pl-8 md:pt-0 border-t md:border-l flex flex-col md:border-t-0 border-fuchsia-400 w-full basis-[15%] gap-4">

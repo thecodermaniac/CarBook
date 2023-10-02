@@ -9,7 +9,7 @@ import { client } from "./ClientInfo";
 export default function ClientVerdicts() {
     return (
         // autoplay={{ delay: 2000 }}
-        <div className="flex flex-col gap-12 mb-14">
+        <div className="flex flex-col gap-12 mb-14" id="#section-2">
             <div className="flex flex-col w-fit items-center gap-5 mx-auto">
                 <p className="text-black text-4xl w-fit">Testimonials</p>
                 <p className=" text-xl text-center ">

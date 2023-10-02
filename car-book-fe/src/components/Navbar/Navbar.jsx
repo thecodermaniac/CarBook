@@ -50,8 +50,18 @@ function Navbar() {
                                 {/* <span className="hidden group-hover:block">hghg</span> */}
                             </Link>
                         ))}
-                        <div className="md:hidden flex-row md:w-[40%] w-full justify-around bg-white flex">
-                            <button className="bg-mainColor border-mainColor border-2 text-white px-5 py-4  hover:text-mainColor hover:bg-white">Sign Up</button>
+                        <div className="md:hidden flex-row md:w-[40%] w-full justify-center gap-4 bg-white flex">
+                            {user === null ? (
+                                <button className="bg-mainColor border-mainColor border-2 text-white px-5 py-4  hover:text-mainColor hover:bg-white" onClick={() => {
+                                    setopen(true);
+                                }}>Login / Sign Up</button>
+                            ) : (
+                                <div className="flex items-center gap-3">
+                                    <p className="text-grayText text-lg">{user?.name}</p>
+                                    <button className="bg-mainColor border-mainColor border-2 text-white px-5 py-4  hover:text-mainColor hover:bg-white" onClick={logout}>Log out</button>
+                                </div>
+                            )}
+
                         </div>
                     </div>
 

@@ -1,5 +1,8 @@
 import React from 'react'
-import testiImage from '../assets/hero.png'
+import fortuner from '../assets/fortuner.png'
+import amaze from '../assets/amaze.png'
+import altroz from '../assets/altroz.png'
+import xuv from '../assets/xuv-300.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -8,19 +11,19 @@ import 'swiper/css/navigation';
 
 const client = [
     {
-        picImage: testiImage,
+        picImage: fortuner,
         type: 'Suv'
     },
     {
-        picImage: testiImage,
+        picImage: amaze,
         type: 'Sedan'
     },
     {
-        picImage: testiImage,
+        picImage: altroz,
         type: 'Hatch back'
     },
     {
-        picImage: testiImage,
+        picImage: xuv,
         type: 'Off Road'
     }
 ]

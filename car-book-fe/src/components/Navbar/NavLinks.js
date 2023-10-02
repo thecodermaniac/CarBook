@@ -10,17 +10,12 @@ const navLinks = [
     isOtherSite: true
   },
   {
-    link: '/matricula-classes',
+    link: '#section-2',
     title: 'Client Verdicts',
     isOtherSite: false
   },
-  // {
-  //   link: '/community',
-  //   title: 'Community',
-  //   isOtherSite: false
-  // },
   {
-    link: 'https://test.matricula.co.in',
+    link: 'https://aritra-mondal.netlify.app/',
     title: 'About Us',
     isOtherSite: true
   }
