@@ -1,6 +1,47 @@
 # CarBook
 
-This is <b>Full-stack</b> Web App for Car Booking
+This is <b>Full-stack</b> Web App for Car Booking. The frontend uses React and tailwind for styling. The backend uses express js and mongoDB as the database. It is bundled using Vite. It still in production and needs contribution to be a production-worthy application. Contributors are wholeheartly welcomes 🙏. Thanks for dropping by and do star the Repo 🌟.
+
+### Installation
+
+Follow these steps to get the project up and running:
+
+- <b>Front end : </b>
+
+  ```Installing Dependencies
+  cd cd car-book-fe/
+  npm install
+  ```
+  ```start the front-end
+  npm run dev
+  ```
+
+- <b>Back end : </b>
+
+ ```Installing Dependencies
+  cd car-book-be/
+  npm install
+  ```
+  ```start the front-end
+  npm run dev
+  ```
+
+### Contribute Guides
+
+1. Fork the repository to your own GitHub account.
+
+2. Clone the forked repository to your local machine:
+
+   ```
+   git clone https://github.com/<your_github_id>/CarBook.git
+   ```
+
+3. Create an issue explaining the problems with the exitisting feature or propose a new feature 
+
+4. Make the necessary changes you want to make in your local repository.
+
+5. Create a Pull Request [PR] explaining your work. And wait for it to be reviwed.
+
 
 ## Screenshot of the app
 
