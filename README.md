@@ -9,7 +9,7 @@ Follow these steps to get the project up and running:
 - <b>Front end : </b>
 
   ```Installing Dependencies
-  cd cd car-book-fe/
+  cd car-book-fe/
   npm install
   ```
   ```start the front-end
