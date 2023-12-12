@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import closeIcon from '../assets/close.png'
 import signupimg from '../assets/logo_vector.svg'
@@ -7,6 +8,7 @@ import axiosInstance from '../axiosServer'
 import { useUser } from '../contex/UserContext'
 import { toast } from 'react-toastify'
 
+// eslint-disable-next-line react/prop-types
 const Login = ({ setmodal }) => {
   const [show, setshow] = useState(true);
   const { setUser } = useUser();

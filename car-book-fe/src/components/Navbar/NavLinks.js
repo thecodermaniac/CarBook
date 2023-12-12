@@ -1,24 +1,25 @@
 const navLinks = [
   {
-    link: '/explore-car',
-    title: 'Explore Cars',
-    isOtherSite: false
+    link: "/explore-car",
+    title: "Explore Cars",
+    isOtherSite: false,
   },
   {
-    link: '/user-booking',
-    title: 'My Rides',
-    isOtherSite: true
+    link: "/user-booking",
+    title: "My Rides",
+    isOtherSite: true,
   },
   {
-    link: '#section-2',
-    title: 'Client Verdicts',
-    isOtherSite: false
+    link: "/",
+    title: "Client Verdicts",
+    isOtherSite: false,
+    scrollId: "verdicts",
   },
   {
-    link: 'https://aritra-mondal.netlify.app/',
-    title: 'About Us',
-    isOtherSite: true
-  }
+    link: "https://aritra-mondal.netlify.app/",
+    title: "About Us",
+    isOtherSite: true,
+  },
 ];
 
 export { navLinks };
