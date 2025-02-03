@@ -42,6 +42,8 @@ Follow these steps to get the project up and running:
 
 5. Create a Pull Request [PR] explaining your work. And wait for it to be reviwed.
 
+## AI agent integration 
+![image](https://github.com/user-attachments/assets/50038181-d5a5-4cf3-8c6f-51ba98288a5f)
 
 ## Screenshot of the app
 
@@ -67,6 +69,7 @@ Follow these steps to get the project up and running:
 
 
 ![image](https://github.com/thecodermaniac/CarBook/assets/79108244/7db722fb-1928-45b6-91f7-277e6805cad1)
+
 
 
 ## Video work-through of the app
