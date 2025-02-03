@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UserState } from "./contex/UserContext";
 import BookedCars from "./pages/BookedCars";
+import CarChatWidget from "./components/CarChatWidget";
 function App() {
   return (
     <UserState>
@@ -22,6 +23,7 @@ function App() {
             <Route path="/user-booking" element={<BookedCars />} />
             <Route path="/aboutus" element={<PrivateRoute><About /></PrivateRoute>} />
           </Routes>
+          <CarChatWidget />
         </Layouts>
       </BrowserRouter>
     </UserState>
