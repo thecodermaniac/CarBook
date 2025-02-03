@@ -20,7 +20,7 @@ const Login = ({ setmodal }) => {
     setshow(prev => !prev);
   };
   function handleLogin() {
-    axiosInstance.post('http://localhost:5000/user/sign-in-User', {
+    axiosInstance.post('/user/sign-in-User', {
       email: existUser.email,
       password: existUser.password
     }).then((response) => {

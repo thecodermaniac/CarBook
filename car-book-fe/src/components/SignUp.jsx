@@ -19,7 +19,7 @@ const SignUp = ({ setmodal }) => {
         setshow(prev => !prev);
     };
     async function handleSignup() {
-        axiosInstance.post('http://localhost:5000/user/sign-up-User', {
+        axiosInstance.post('/user/sign-up-User', {
             name: newUser.name,
             email: newUser.email,
             password: newUser.password

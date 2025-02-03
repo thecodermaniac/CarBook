@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SendHorizontal, MessageCircleIcon, X, Loader } from "lucide-react";
 import { useUser } from "../contex/UserContext";
-import axios from "axios";
+import axiosFastApi from "../axiosFastServer";
 
 export default function CarChatWidget() {
     const { user } = useUser();
@@ -12,7 +12,7 @@ export default function CarChatWidget() {
     const [isSignedIn, setIsSignedIn] = useState(false); // Change to false to simulate not signed-in state
 
     useEffect(() => {
-        if (user !== null) {
+        if (user !== null || user?.email !== undefined) {
             setIsSignedIn(true);
 
         }
@@ -34,7 +34,7 @@ export default function CarChatWidget() {
         setLoading(true);
 
         try {
-            const response = await axios.post("http://localhost:8000/recommend", {
+            const response = await axiosFastApi.post("http://localhost:8000/recommend", {
                 question: input,
                 user_id: user?.email
             });

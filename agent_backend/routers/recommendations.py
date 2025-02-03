@@ -14,25 +14,29 @@ class ChatRequest(BaseModel):
 @router.post("/recommend")
 # async def recommend_car(user_query = Body(...)):
 async def recommend_car(request: ChatRequest):
-    query=request.question
-    llm_response = generate_query(str(query),str(request.user_id))
-    car_array = extract_car_types(str(llm_response))
-    print("LLM response:", car_array)
+    try:
+        # query = user_query["question"]
+        query = request.question
+        llm_response = generate_query(str(query),str(request.user_id))
+        car_array = extract_car_types(str(llm_response))
+        print("LLM response:", car_array)
 
-    # cars_cursor = app.mongodb.find({"type": {"$in": car_types}})
-    # cars = await cars_cursor.to_list(length=100)
-    
-    cars = await car_collection.find({
-            "$expr": {
-                "$in": [
-                    {"$toLower": "$carType"},  # Convert field to lowercase
-                    car_array                # Compare against lowercase input array
-                ]
-            }
-        },{"_id": 0}).to_list(length=5)
-    print("Cars found:", cars)
-    # if not cars:
-    #     raise HTTPException(status_code=404, detail="No cars found for the given query.")
+        # cars_cursor = app.mongodb.find({"type": {"$in": car_types}})
+        # cars = await cars_cursor.to_list(length=100)
+        
+        cars = await car_collection.find({
+                "$expr": {
+                    "$in": [
+                        {"$toLower": "$carType"},  # Convert field to lowercase
+                        car_array                # Compare against lowercase input array
+                    ]
+                }
+            },{"_id": 0}).to_list(length=5)
+        print("Cars found:", cars)
+        if not cars:
+            raise HTTPException(status_code=404, detail="No cars found for the given query.")
 
-    return {"query": query, "suggested_cars": cars}
+        return {"query": query, "suggested_cars": cars}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
